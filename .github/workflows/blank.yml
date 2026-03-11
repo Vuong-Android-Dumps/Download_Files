@@ -14,14 +14,6 @@ jobs:
       - name: Download file
         run: |
           wget \
-          --header="User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64)" \
-          --header="Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8" \
-          --header="Accept-Language: en-US,en;q=0.9" \
-          --header="Cache-Control: no-cache" \
-          --header="Pragma: no-cache" \
-          --header="Authorization: Bearer ${{ secrets.LENOVO_TOKEN }}" \
-          --header="guid: 3adf1304-8a70-4352-b687-8eddcef6b7d1" \
-          --header="Request-Tag: lmsa" \
           -O "firmware.zip" \
           "https://rsddownload-secure.lenovo.com/ROADSTR_G_W1WRS36.39-73-3-1_subsidy-DEFAULT_regulatory-DEFAULT_cid50_CFC.xml.zip"
 
